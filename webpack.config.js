@@ -34,6 +34,7 @@ module.exports = {
     filename: '[name].js'
   },
   externals: [
+    /package\.json$/,
     (context, request, callback) => {
       // We want to keep the SDK code outside the GUI bundle.
       // This piece of code allows us to run the GUI directly
